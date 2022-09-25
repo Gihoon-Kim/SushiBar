@@ -1,0 +1,79 @@
+.mainTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2) 10%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 1)
+  );
+}
+
+.mainImageCarousel {
+  flex: 1;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTitle {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.mainTitle h1 {
+  font-size: 40px;
+  font: bold 40px arial, helvetica, sans-serif;
+}
+
+.mainImage {
+  flex: 1;
+  margin-left: auto;
+  opacity: 0.7;
+  background-color: transparent;
+}
+
+.reviews {
+  text-align: center;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.helpText {
+  display: none;
+}
+
+.font-icon-wrapper:hover .helpText {
+  display: contents;
+}
+
+.instaReview {
+  width: 30%;
+  height: 50%;
+  margin: auto;
+  display: flow;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBottom {
+  height: 80px;
+  display: flex;
+  background-color: antiquewhite;
+}
+
+.bottomLeft {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+}
+
+.bottomRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

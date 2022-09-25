@@ -21,7 +21,11 @@ function Topbar() {
           </ul>
         </nav>
       </div>
-      <div className="topbarRight">Order Online</div>
+      <div className="topbarRight">
+        <Link to="/uber" style={{ textDecoration: "none" }}>
+          <span className="topbarOrderOnline">Order Online</span>
+        </Link>
+      </div>
     </div>
   );
 }
