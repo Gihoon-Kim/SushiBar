@@ -8,10 +8,10 @@ import HelpIcon from "@mui/icons-material/Help";
 
 function Home() {
   return (
-    <div>
+    <div className="mainContainer">
       <div className="mainTop">
         <div className="mainTitle">
-          <h1> Our Promiss </h1> <br />
+          <h1> Welcome to SushiBar </h1> <br />
           <span> more fresh ingredients </span> <br />
           <span> more fresh food </span>
         </div>
@@ -21,14 +21,10 @@ function Home() {
           animation="fade"
           duration={3000}
           navButtonsAlwaysInvisible={true}
+          indicators={false}
         >
+          <img src={`${process.env.REACT_APP_PUBLIC_FOLDER}sushi.png`} alt="" />
           <img
-            className="mainImage"
-            src={`${process.env.REACT_APP_PUBLIC_FOLDER}sushi.png`}
-            alt=""
-          />
-          <img
-            className="mainImage"
             src={`${process.env.REACT_APP_PUBLIC_FOLDER}sushiMain.jpg`}
             alt=""
           />
@@ -36,6 +32,20 @@ function Home() {
       </div>
 
       <div className="reviews">
+        <div className="instaReview">
+          <Carousel
+            className="instaReviewCarousel"
+            animation="slide"
+            duration={3000}
+            navButtonsAlwaysInvisible={true}
+            indicators={false}
+          >
+            {testCard.map((testItem) => {
+              return <ReviewCard items={testItem} />;
+            })}
+          </Carousel>
+        </div>
+
         <div className="reviewMsg">
           <Typography
             fontWeight={"bold"}
@@ -47,23 +57,17 @@ function Home() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Thank you for reviewing
+            Reviews
           </Typography>
 
-          <div class="font-icon-wrapper">
-            <HelpIcon color="primary" fontSize="large" />
+          <div className="font-icon-wrapper">
+            <HelpIcon className="helpIcon" color="primary" fontSize="small" />
             <p className="helpText">
               we choose reviewers randomly and give 20% discount coupons for
               them.
             </p>
           </div>
         </div>
-
-        <Carousel className="instaReview" animation="fade" duration={3000}>
-          {testCard.map((testItem) => {
-            return <ReviewCard items={testItem} />;
-          })}
-        </Carousel>
       </div>
 
       <div className="mainBottom">

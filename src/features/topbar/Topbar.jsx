@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Topbar.css";
 import { menuItems } from "./menuItem";
-import MenuItems from "../../components/MenuItems";
+import DropdownItems from "../../components/DropdownItems";
 
 function Topbar() {
   return (
@@ -16,7 +16,7 @@ function Topbar() {
         <nav>
           <ul className="menus">
             {menuItems.map((menu, index) => {
-              return <MenuItems items={menu} key={index} />;
+              return <DropdownItems items={menu} key={index} />;
             })}
           </ul>
         </nav>

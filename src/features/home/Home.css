@@ -1,21 +1,25 @@
-.mainTop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.mainContainer {
   background: linear-gradient(
-    to right,
+    to right bottom,
     rgba(0, 0, 0, 0.2) 10%,
     rgba(0, 0, 0, 0.7) 50%,
     rgba(0, 0, 0, 1)
   );
 }
 
-.mainImageCarousel {
-  flex: 1;
-  width: 500px;
-  height: 500px;
+.mainTop {
+  width: 100%;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mainImageCarousel {
+  flex: 1;
+  opacity: 0.7;
+  background-color: transparent;
+  text-align: center;
 }
 
 .mainTitle {
@@ -29,34 +33,43 @@
   font: bold 40px arial, helvetica, sans-serif;
 }
 
-.mainImage {
-  flex: 1;
-  margin-left: auto;
-  opacity: 0.7;
-  background-color: transparent;
-}
-
 .reviews {
-  text-align: center;
-  padding: 20px;
-  background-color: whitesmoke;
-}
-
-.helpText {
-  display: none;
-}
-
-.font-icon-wrapper:hover .helpText {
-  display: contents;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .instaReview {
-  width: 30%;
-  height: 50%;
-  margin: auto;
-  display: flow;
+  flex: 1;
+  display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.instaReviewCarousel {
+  opacity: 0.7;
+  width: 70%;
+}
+
+.reviewMsg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.font-icon-wrapper {
+  justify-content: center;
+}
+
+.helpText {
+  color: white;
+  background-color: rgba(144, 214, 103, 0.448);
+  opacity: 0;
+  position: absolute;
+}
+
+.helpIcon:hover ~ .helpText {
+  transition: all 0.5s;
+  opacity: 1;
 }
 
 .mainBottom {
