@@ -2,8 +2,8 @@
   background: linear-gradient(
     to right bottom,
     rgba(0, 0, 0, 0.2) 10%,
-    rgba(0, 0, 0, 0.7) 50%,
-    rgba(0, 0, 0, 1)
+    rgba(43, 90, 43, 0.7) 50%,
+    rgb(143, 77, 77)
   );
 }
 
@@ -74,9 +74,8 @@
 
 .mainInfo {
   width: 100%;
-  margin: 0 auto;
-  padding: 40px 0px;
-  background: white;
+  margin: 30px auto;
+  padding: 40px 100px;
 }
 
 .infoItems {

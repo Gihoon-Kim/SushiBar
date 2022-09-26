@@ -30,9 +30,6 @@ export default function ReviewCard({ items }) {
         ) : null}
         <Typography variant="body2">{items.reviewDesc}</Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }

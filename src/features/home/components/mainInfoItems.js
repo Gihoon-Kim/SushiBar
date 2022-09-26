@@ -7,7 +7,7 @@ export const testInfo = [
   {
     infoImage: `${process.env.REACT_APP_PUBLIC_FOLDER}serving.png`,
     infoTitle: "Great Service",
-    infoDesc: "We do our best to your great expereience",
+    infoDesc: "We do our best for your great expereience",
   },
   {
     infoImage: `${process.env.REACT_APP_PUBLIC_FOLDER}communication.png`,
