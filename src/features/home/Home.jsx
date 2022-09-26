@@ -3,8 +3,10 @@ import "./Home.css";
 import ReviewCard from "../../components/ReviewCard";
 import Carousel from "react-material-ui-carousel";
 import { testCard } from "./reviewerItem";
+import { testInfo } from "./components/mainInfoItems";
 import { Typography } from "@mui/material";
 import HelpIcon from "@mui/icons-material/Help";
+import MainInformation from "./components/MainInformation";
 
 function Home() {
   return (
@@ -68,6 +70,18 @@ function Home() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="mainInfo">
+        <ul className="infoItems">
+          {testInfo.map((testItem) => {
+            return (
+              <li className="infoItem">
+                <MainInformation items={testItem} />
+              </li>
+            );
+          })}
+        </ul>
       </div>
 
       <div className="mainBottom">
