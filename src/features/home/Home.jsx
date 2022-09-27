@@ -7,6 +7,7 @@ import { testInfo } from "./components/mainInfoItems";
 import { Typography } from "@mui/material";
 import HelpIcon from "@mui/icons-material/Help";
 import MainInformation from "./components/MainInformation";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Home() {
   return (
@@ -90,8 +91,9 @@ function Home() {
           <p>Designed by Hoony Kim.</p>
         </div>
         <div className="bottomRight">
-          <p>© SushiBar 2022.</p>
-          <p>Designed by Hoony Kim.</p>
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+            <InstagramIcon fontSize="large" />
+          </a>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ function Topbar() {
     <div className="topbarContainer">
       <div className="topbarLeft">
         <Link to="/" style={{ textDecoration: "none" }}>
+          {/* TODO : this logo will change after to image */}
           <span className="topbarLogo">Sushi Bar</span>
         </Link>
       </div>

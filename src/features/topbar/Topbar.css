@@ -36,6 +36,11 @@
   color: white;
   cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+  .topbarLogo {
+    font-size: 16px;
+  }
+}
 
 .topbarOrderOnline {
   font-size: 24px;
